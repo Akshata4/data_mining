@@ -1,0 +1,31 @@
+{
+  "framework": "scikit-learn",
+  "winner_model": "GradientBoosting",
+  "random_state": 42,
+  "threshold_policy": "Recall\u22650.85 (max precision)",
+  "threshold": 0.5586307103554471,
+  "dropped_id_cols": [
+    "patient_id",
+    "pack_years"
+  ],
+  "numeric_features": [
+    "age"
+  ],
+  "categorical_features": [
+    "alcohol_consumption",
+    "asbestos_exposure",
+    "copd_diagnosis",
+    "family_history",
+    "gender",
+    "radon_exposure",
+    "secondhand_smoke_exposure"
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.3.3",
+    "pandas": "2.3.2",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "matplotlib": "3.10.6"
+  }
+}

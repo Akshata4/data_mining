@@ -1,0 +1,12 @@
+column,dtype,unique_values,missing,missing_%
+age,int64,83,0,0.0
+alcohol_consumption,object,2,16662,33.32
+asbestos_exposure,object,2,0,0.0
+copd_diagnosis,object,2,0,0.0
+family_history,object,2,0,0.0
+gender,object,2,0,0.0
+lung_cancer,object,2,0,0.0
+pack_years,float64,50000,0,0.0
+patient_id,int64,50000,0,0.0
+radon_exposure,object,3,0,0.0
+secondhand_smoke_exposure,object,2,0,0.0

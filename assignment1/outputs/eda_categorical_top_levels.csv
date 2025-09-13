@@ -1,0 +1,17 @@
+feature,level,count,fraction
+gender,Female,25085,0.5017
+gender,Male,24915,0.4983
+radon_exposure,Low,16682,0.33364
+radon_exposure,Medium,16679,0.33358
+radon_exposure,High,16639,0.33278
+asbestos_exposure,No,25151,0.50302
+asbestos_exposure,Yes,24849,0.49698
+secondhand_smoke_exposure,Yes,25067,0.50134
+secondhand_smoke_exposure,No,24933,0.49866
+copd_diagnosis,Yes,25066,0.50132
+copd_diagnosis,No,24934,0.49868
+alcohol_consumption,Heavy,16762,0.33524
+alcohol_consumption,nan,16662,0.33324
+alcohol_consumption,Moderate,16576,0.33152
+family_history,No,25017,0.50034
+family_history,Yes,24983,0.49966

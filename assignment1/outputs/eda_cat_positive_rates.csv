@@ -1,0 +1,16 @@
+feature,level,positive_rate,count
+gender,Female,0.6872234403029699,25085
+gender,Male,0.6873369456150913,24915
+radon_exposure,Low,0.645725932142429,16682
+radon_exposure,Medium,0.6394867797829606,16679
+radon_exposure,High,0.7768495702866759,16639
+asbestos_exposure,No,0.6147668084768001,25151
+asbestos_exposure,Yes,0.7606744738218841,24849
+secondhand_smoke_exposure,Yes,0.732078030877249,25067
+secondhand_smoke_exposure,No,0.6422412064332411,24933
+copd_diagnosis,Yes,0.7582781456953642,25066
+copd_diagnosis,No,0.6159059918184006,24934
+alcohol_consumption,Heavy,0.7107147118482281,16762
+alcohol_consumption,Moderate,0.6792953667953668,16576
+family_history,No,0.6377663189031458,25017
+family_history,Yes,0.7368610655245567,24983

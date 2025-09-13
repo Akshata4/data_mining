@@ -1,0 +1,2 @@
+feature,min,max,mean,median,std,approx_outliers(IQR)
+age,18.0,100.0,58.85704,59.0,23.958266264670492,0
