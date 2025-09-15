@@ -5,6 +5,7 @@ A fully reproducible, leakage-proof **binary classification** pipeline that pred
 > ⚕️ **Disclaimer:** Educational/ML workflow only — **not medical advice**.
 
 ---
+ChatGPT session history can be found in the ChatGPT-Data Mining.docx
 
 ## ✨ What you get
 
