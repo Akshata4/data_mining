@@ -1,0 +1,16 @@
+[project]
+name = "data-mining-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "open-interpreter>=0.4.3",
+]
+
+[tool.uv.workspace]
+members = [
+    "crisp-dm_project",
+    "semma_project",
+    "kdd_project",
+]

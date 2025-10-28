@@ -1,0 +1,9 @@
+[project]
+name = "crisp-dm-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "open-interpreter>=0.4.3",
+]
