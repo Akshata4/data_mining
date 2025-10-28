@@ -1,0 +1,51 @@
+
+Issues Table:
+
+| Issue                       | Severity | Why It Matters                                               | Fix                                                        |
+|-----------------------------|----------|--------------------------------------------------------------|------------------------------------------------------------|
+| Lack of Stratified Sampling | High     | Ensures representative splits, especially for imbalanced targets. | Use `train_test_split` with `stratify` for balanced splits. |
+| Potential Data Leakage      | High     | Could lead to misleading model evaluations.                   | Verify splits and transformations do not obscure training labels. |
+| Pipeline Separation         | Medium   | Ensures reproducibility and prevents leakage.                 | Implement pipelines with `ColumnTransformer` for feature engineering. |
+| Missing Imbalance Handling  | Medium   | Imbalance affects model performance.                          | Consider class balancing strategies like SMOTE or class weights in ML. |
+| Incomplete Data Quality Checks | Medium   | Ensures data readiness and feature consistency post-preparation. | Include data quality metrics like variance and correlation checks.|
+
+Evidence Gaps:
+- Plots demonstrating balanced datasets across splits.
+- Stratified sampling in complemented evidence.
+- Code validation for data leakage prevention.
+- Feature-engineering rationale documentation.
+
+Concrete Fixes with Code Hints:
+```python
+# Stratified sampling:
+train_data, test_data = train_test_split(data, test_size=0.1, stratify=data['Target'], random_state=42)
+
+# Pipeline implementation:
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
+# Example for numerical and categorical feature transformations
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', StandardScaler(), ['num_feature1', 'num_feature2']),  # Numeric features
+        ('cat', OneHotEncoder(), ['cat_feature1'])  # Categorical features
+    ])
+
+pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
+```
+
+Best-Practice References:
+- **Stratified Sampling**: Essential to ensure equal distribution of target classes.
+- **Data Leakage Prevention**: Changes in data splits or feature transformation are tracked.
+- **ColumnTransformer in Pipelines**: Department of patterns for reproducibility and consistency.
+
+Verdict:
+**REVISE**: For a robust phase that ensures data integrity and consistency, revisions should focus on stratified sampling, comprehensive data splitting verification, and setting up transformative pipelines to avoid data leakage.
+
+Acceptance Checklist:
+- [ ] Implement stratified sampling to ensure balanced splits.
+- [ ] Validate data leakage is not possible from current setup.
+- [ ] Develop and use pipelines for feature transformations.
+- [ ] Document transformation steps and justification.
+- [ ] Carry out pre/post data quality checks for integrity and consistency.
