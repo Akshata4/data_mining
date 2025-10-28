@@ -16,3 +16,11 @@ This project aims to understand and predict the chances of graduate admission ba
 
 ## Getting Started
 This project uses `uv` for managing dependencies and environments. Make sure to have `uv` installed to ensure reproducibility and compliance with constraints.
+
+## Recent Enhancements
+- Detailed statistical descriptions for all features have been added.
+- Visualizations for data distributions are now included, providing insights into feature distributions.
+- Missing data inspection has been implemented with both counts and heatmap visualization for better data quality assessment.
+- A correlation heatmap is available to understand relationships between features, aiding in feature selection.
+
+Feel free to explore `02_data_understanding.ipynb` for more comprehensive data analysis.
