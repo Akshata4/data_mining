@@ -5,9 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "imbalanced-learn>=0.14.0",
+    "joblib>=1.5.2",
     "matplotlib>=3.10.7",
     "nbformat>=5.10.4",
+    "notebook>=7.4.7",
     "open-interpreter>=0.4.3",
     "pandas>=2.3.3",
+    "pyarrow>=22.0.0",
+    "scikit-learn>=1.7.2",
+    "scikit-learn-intelex>=2025.9.0",
     "seaborn>=0.13.2",
 ]
