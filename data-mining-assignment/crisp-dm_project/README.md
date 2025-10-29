@@ -1,26 +1,79 @@
+# Deployment of Machine Learning Model with FastAPI and Docker
 
-# Graduate Admission Prediction Project
+This document outlines the steps to deploy the machine learning model using FastAPI and Docker.
 
-This project aims to understand and predict the chances of graduate admission based on various features like GRE scores, TOEFL scores, university ratings, and more.
+## Step-by-Step Guide
 
-## Project Structure
-- **notebooks/**: Jupyter notebooks documenting the CRISP-DM phases.
-  - `01_business_understanding.ipynb`: Contains the business understanding phase.
-  - `02_data_understanding.ipynb`: Contains the data understanding phase where we explore and analyze the dataset.
-- **src/**: Source code for data processing and modeling (to be developed in future phases).
-- **reports/**: Output reports and visualizations (to be generated in later phases).
+### Prerequisites
 
-## Current Phase: Data Understanding
-- Loaded the dataset and explored basic properties like shape, columns, and data types.
-- Initiated the creation of a data dictionary and began checking data integrity.
+- Docker
+- Python 3.8+
+- Ensure you have the model and transformers saved as `model_v1.joblib` and `transformer.joblib` respectively in the `deployment/` directory.
 
-## Getting Started
-This project uses `uv` for managing dependencies and environments. Make sure to have `uv` installed to ensure reproducibility and compliance with constraints.
+### Installation and Setup
 
-## Recent Enhancements
-- Detailed statistical descriptions for all features have been added.
-- Visualizations for data distributions are now included, providing insights into feature distributions.
-- Missing data inspection has been implemented with both counts and heatmap visualization for better data quality assessment.
-- A correlation heatmap is available to understand relationships between features, aiding in feature selection.
+1. **Clone the Repository**
+   
+   Clone the project repository and navigate to the project root.
+   ```bash
+   git clone <repository-url>
+   cd <repository-root>
+   ```
 
-Feel free to explore `02_data_understanding.ipynb` for more comprehensive data analysis.
+2. **Setup Environment**
+
+   Use `uv` or any virtual environment tool to create and activate a virtual environment:
+   ```bash
+   uv --create -r deployment/requirements.txt
+   source your_env/bin/activate  # Command might vary depending on the tool used
+   ```
+
+3. **Build Docker Image**
+
+   Build the Docker image for the FastAPI service:
+   ```bash
+   docker build -t model-api ./deployment
+   ```
+
+4. **Run Docker Container**
+
+   Run the Docker container:
+   ```bash
+   docker run -p 8000:8000 model-api
+   ```
+
+### Usage
+
+- **Health Check**
+
+  Access the health check endpoint to verify the service is running:
+  ```bash
+  curl http://localhost:8000/health
+  ```
+
+- **Make a Prediction**
+
+  Send a POST request to the predict endpoint:
+  ```bash
+  curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{"feature1": 0.5}'
+  ```
+
+### Testing
+
+- **Run Tests**
+
+  Run the test suite to ensure all API endpoints are functioning as expected:
+  ```bash
+  pytest tests/
+  ```
+
+### Monitoring and Rollback
+
+- Health and monitoring endpoints are available to verify service status.
+- Rollback by deploying the previous tagged Docker images and model versions if required.
+
+### Risks and Next Steps
+
+- Implement further logging and monitoring tools for real-time insights.
+- Plan periodic audits and updates to the model and code to ensure accuracy and compliance.
+
