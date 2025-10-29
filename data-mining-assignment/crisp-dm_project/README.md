@@ -2,6 +2,10 @@
 
 This document outlines the steps to deploy the machine learning model using FastAPI and Docker.
 
+## Demo Video
+
+[Watch Demo Video here (use SJSU account)](https://sjsu0-my.sharepoint.com/:v:/g/personal/akshata_madavi_sjsu_edu/Eez4hJErRAtFrQhmA0tp16kB3cXFMNp6wRRJOATRKEeDIg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MKdpqs)
+
 ## Step-by-Step Guide
 
 ### Prerequisites
