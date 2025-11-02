@@ -1,0 +1,1 @@
+Sample stage critique: PASS with notes — enforce Ticket group disjointness, log split sizes & target rates.

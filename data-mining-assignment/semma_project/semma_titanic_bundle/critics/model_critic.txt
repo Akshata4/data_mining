@@ -1,0 +1,1 @@
+Model stage critique: REVISE — group-aware CV, nested HPO, baselines incl. Dummy, uncertainty bands, calibration & fairness.

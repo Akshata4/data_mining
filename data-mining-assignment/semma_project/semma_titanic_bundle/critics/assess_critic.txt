@@ -1,0 +1,1 @@
+Assess stage critique: REVISE — align with Stage-4 best, calibrator by Brier, threshold sensitivity + CI, fairness gap CIs, drift checks.

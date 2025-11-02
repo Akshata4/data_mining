@@ -1,0 +1,1 @@
+Explore stage critique: REVISE — add Cramér’s V, subgroup calibration views, anomaly flags; review Cabin/Name/Ticket leakage.
