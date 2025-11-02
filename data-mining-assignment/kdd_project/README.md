@@ -1,5 +1,7 @@
 # From Raw Petals to Predictions: A KDD Walkthrough on the Iris Dataset
 
+Medium Article - [https://medium.com/@akshatamadavi/unveiling-insights-a-practical-data-mining-project-walkthrough-f9d5fd688ce7]
+
 **TL;DR**  
 We follow the **KDD** process end‑to‑end (Sample → Select/Preprocess → Model → Evaluate/Interpret → Deploy) on the Iris dataset.  
 Final model: **RandomForest**. Test performance: **accuracy = 0.967**, **macro‑F1 = 0.967**, **macro AUC = 0.987**.
@@ -99,3 +101,4 @@ def predict(item: dict):
 ```
 
 *Publishing on Medium:* paste this Markdown and upload the images from `medium_assets/` when prompted by the editor. Title and TL;DR can be adjusted to your voice.
+
