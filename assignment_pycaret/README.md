@@ -3,7 +3,7 @@
 This repository contains a data mining assignment utilizing PyCaret, a low-code machine learning library in Python. The project demonstrates an end-to-end workflow for building, comparing, tuning, and evaluating machine learning models with minimal coding effort.
 
 ## Video Demonstration
-[![PyCaret Data Mining Assignment](http://img.youtube.com/vi/your_video_id/0.jpg)](http://www.youtube.com/watch?v=your_video_id)
+[PyCaret Data Mining Assignment - Watch on SJSU Drive](https://sjsu0-my.sharepoint.com/:v:/g/personal/akshata_madavi_sjsu_edu/EYDfKWbZ3alDn6Gk-QgZc7sB-sgu2PbvhguzD44S1rbgmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ie7SOr)
 
 ## Project Overview
 
